@@ -1,0 +1,1875 @@
+<?xml version="1.0"?>
+<DataProfile xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.microsoft.com/sqlserver/2008/DataDebugger/">
+  <ProfileVersion>1.0</ProfileVersion>
+  <DataSources>
+    <DtsDataSource ID="{9BBF10C2-3755-471E-A12C-B55F4FA80B01}" Name="ARASH\ARASH_DEV_BI_MD.pubs">
+      <DtsConnectionManagerID>ARASH\ARASH_DEV_BI_MD.pubs</DtsConnectionManagerID>
+    </DtsDataSource>
+    <DtsDataSource ID="{CBF5A266-4AE0-458C-BE9B-DEDF6F51C649}" Name="PubsProfilingAuthors">
+      <DtsConnectionManagerID>PubsProfilingAuthors</DtsConnectionManagerID>
+    </DtsDataSource>
+    <DtsDataSource ID="{656BD86D-83DB-48EF-B200-35EB0208C906}" Name="PubsProfilingEmployee">
+      <DtsConnectionManagerID>PubsProfilingEmployee</DtsConnectionManagerID>
+    </DtsDataSource>
+    <DtsDataSource ID="{064FECC0-EC1C-4F01-A75C-870CC117AA56}" Name="PubsProfilingPublishers">
+      <DtsConnectionManagerID>PubsProfilingPublishers</DtsConnectionManagerID>
+    </DtsDataSource>
+    <DtsDataSource ID="{EA2E9E25-9872-46D0-BDD9-1A00D86321C3}" Name="PubsProfilingSales">
+      <DtsConnectionManagerID>PubsProfilingSales</DtsConnectionManagerID>
+    </DtsDataSource>
+    <DtsDataSource ID="{1CC9BFB1-ED1F-4B63-81CB-9D0E309A0312}" Name="PubsProfilingStores">
+      <DtsConnectionManagerID>PubsProfilingStores</DtsConnectionManagerID>
+    </DtsDataSource>
+    <DtsDataSource ID="{54B61E7C-B0AC-4212-820A-6ABB45E9167B}" Name="PubsProfilingTitleAuthors">
+      <DtsConnectionManagerID>PubsProfilingTitleAuthors</DtsConnectionManagerID>
+    </DtsDataSource>
+    <DtsDataSource ID="{9022BA7F-C3F8-455D-9E12-362039B4A551}" Name="PubsProfilingtitles">
+      <DtsConnectionManagerID>PubsProfilingtitles</DtsConnectionManagerID>
+    </DtsDataSource>
+  </DataSources>
+  <DataProfileInput>
+    <ProfileMode>Exact</ProfileMode>
+    <Timeout>0</Timeout>
+    <Requests>
+      <ColumnNullRatioProfileRequest ID="NullRatioReq">
+        <DataSourceID>{9BBF10C2-3755-471E-A12C-B55F4FA80B01}</DataSourceID>
+        <Table Schema="dbo" Table="authors" />
+        <Column IsWildCard="true" />
+      </ColumnNullRatioProfileRequest>
+      <ColumnStatisticsProfileRequest ID="StatisticsReq">
+        <DataSourceID>{9BBF10C2-3755-471E-A12C-B55F4FA80B01}</DataSourceID>
+        <Table Schema="dbo" Table="authors" />
+        <Column IsWildCard="true" />
+      </ColumnStatisticsProfileRequest>
+      <ColumnLengthDistributionProfileRequest ID="LengthDistReq">
+        <DataSourceID>{9BBF10C2-3755-471E-A12C-B55F4FA80B01}</DataSourceID>
+        <Table Schema="dbo" Table="authors" />
+        <Column IsWildCard="true" />
+        <IgnoreLeadingSpace>false</IgnoreLeadingSpace>
+        <IgnoreTrailingSpace>true</IgnoreTrailingSpace>
+      </ColumnLengthDistributionProfileRequest>
+      <ColumnValueDistributionProfileRequest ID="ValueDistReq">
+        <DataSourceID>{9BBF10C2-3755-471E-A12C-B55F4FA80B01}</DataSourceID>
+        <Table Schema="dbo" Table="authors" />
+        <Column IsWildCard="true" />
+        <Option>FrequentValues</Option>
+        <FrequentValueThreshold>0.001</FrequentValueThreshold>
+      </ColumnValueDistributionProfileRequest>
+      <CandidateKeyProfileRequest ID="KeyReq">
+        <DataSourceID>{9BBF10C2-3755-471E-A12C-B55F4FA80B01}</DataSourceID>
+        <Table Schema="dbo" Table="authors" />
+        <KeyColumns>
+          <Column IsWildCard="true" />
+        </KeyColumns>
+        <ThresholdSetting>Specified</ThresholdSetting>
+        <KeyStrengthThreshold>0.95</KeyStrengthThreshold>
+        <VerifyOutputInFastMode>false</VerifyOutputInFastMode>
+        <MaxNumberOfViolations>100</MaxNumberOfViolations>
+      </CandidateKeyProfileRequest>
+      <ColumnNullRatioProfileRequest ID="NullRatioReq1">
+        <DataSourceID>{9BBF10C2-3755-471E-A12C-B55F4FA80B01}</DataSourceID>
+        <Table Schema="dbo" Table="titles" />
+        <Column IsWildCard="true" />
+      </ColumnNullRatioProfileRequest>
+      <ColumnStatisticsProfileRequest ID="StatisticsReq1">
+        <DataSourceID>{9BBF10C2-3755-471E-A12C-B55F4FA80B01}</DataSourceID>
+        <Table Schema="dbo" Table="titles" />
+        <Column IsWildCard="true" />
+      </ColumnStatisticsProfileRequest>
+      <ColumnLengthDistributionProfileRequest ID="LengthDistReq1">
+        <DataSourceID>{9BBF10C2-3755-471E-A12C-B55F4FA80B01}</DataSourceID>
+        <Table Schema="dbo" Table="titles" />
+        <Column IsWildCard="true" />
+        <IgnoreLeadingSpace>false</IgnoreLeadingSpace>
+        <IgnoreTrailingSpace>true</IgnoreTrailingSpace>
+      </ColumnLengthDistributionProfileRequest>
+      <ColumnValueDistributionProfileRequest ID="ValueDistReq1">
+        <DataSourceID>{9BBF10C2-3755-471E-A12C-B55F4FA80B01}</DataSourceID>
+        <Table Schema="dbo" Table="titles" />
+        <Column IsWildCard="true" />
+        <Option>FrequentValues</Option>
+        <FrequentValueThreshold>0.001</FrequentValueThreshold>
+      </ColumnValueDistributionProfileRequest>
+      <CandidateKeyProfileRequest ID="KeyReq1">
+        <DataSourceID>{9BBF10C2-3755-471E-A12C-B55F4FA80B01}</DataSourceID>
+        <Table Schema="dbo" Table="titles" />
+        <KeyColumns>
+          <Column IsWildCard="true" />
+        </KeyColumns>
+        <ThresholdSetting>Specified</ThresholdSetting>
+        <KeyStrengthThreshold>0.95</KeyStrengthThreshold>
+        <VerifyOutputInFastMode>false</VerifyOutputInFastMode>
+        <MaxNumberOfViolations>100</MaxNumberOfViolations>
+      </CandidateKeyProfileRequest>
+    </Requests>
+  </DataProfileInput>
+  <DataProfileOutput>
+    <Profiles>
+      <ColumnNullRatioProfile ProfileRequestID="NullRatioReq1" IsExact="true">
+        <DataSourceID>{9BBF10C2-3755-471E-A12C-B55F4FA80B01}</DataSourceID>
+        <Table DataSource="ARASH\ARASH_DEV_BI_MD" Database="pubs" Schema="dbo" Table="titles" RowCount="-1" />
+        <Column Name="title_id" SqlDbType="VarChar" MaxLength="6" Precision="255" Scale="255" LCID="1033" CodePage="0" IsNullable="false" StringCompareOptions="0" />
+        <NullCount>0</NullCount>
+      </ColumnNullRatioProfile>
+      <ColumnNullRatioProfile ProfileRequestID="NullRatioReq1" IsExact="true">
+        <DataSourceID>{9BBF10C2-3755-471E-A12C-B55F4FA80B01}</DataSourceID>
+        <Table DataSource="ARASH\ARASH_DEV_BI_MD" Database="pubs" Schema="dbo" Table="titles" RowCount="-1" />
+        <Column Name="title" SqlDbType="VarChar" MaxLength="80" Precision="255" Scale="255" LCID="1033" CodePage="0" IsNullable="false" StringCompareOptions="0" />
+        <NullCount>0</NullCount>
+      </ColumnNullRatioProfile>
+      <ColumnNullRatioProfile ProfileRequestID="NullRatioReq1" IsExact="true">
+        <DataSourceID>{9BBF10C2-3755-471E-A12C-B55F4FA80B01}</DataSourceID>
+        <Table DataSource="ARASH\ARASH_DEV_BI_MD" Database="pubs" Schema="dbo" Table="titles" RowCount="-1" />
+        <Column Name="type" SqlDbType="Char" MaxLength="12" Precision="255" Scale="255" LCID="1033" CodePage="0" IsNullable="false" StringCompareOptions="0" />
+        <NullCount>0</NullCount>
+      </ColumnNullRatioProfile>
+      <ColumnNullRatioProfile ProfileRequestID="NullRatioReq1" IsExact="true">
+        <DataSourceID>{9BBF10C2-3755-471E-A12C-B55F4FA80B01}</DataSourceID>
+        <Table DataSource="ARASH\ARASH_DEV_BI_MD" Database="pubs" Schema="dbo" Table="titles" RowCount="-1" />
+        <Column Name="pubdate" SqlDbType="DateTime" MaxLength="0" Precision="255" Scale="255" LCID="-1" CodePage="0" IsNullable="false" StringCompareOptions="0" />
+        <NullCount>0</NullCount>
+      </ColumnNullRatioProfile>
+      <CandidateKeyProfile IsExact="true" ProfileRequestID="KeyReq1">
+        <DataSourceID>{9BBF10C2-3755-471E-A12C-B55F4FA80B01}</DataSourceID>
+        <Table DataSource="ARASH\ARASH_DEV_BI_MD" Database="pubs" Schema="dbo" Table="titles" RowCount="-1" />
+        <KeyColumns>
+          <Column Name="title_id" SqlDbType="VarChar" MaxLength="6" Precision="255" Scale="255" LCID="1033" CodePage="0" IsNullable="false" StringCompareOptions="0" />
+        </KeyColumns>
+        <IsExactKey>true</IsExactKey>
+      </CandidateKeyProfile>
+      <ColumnNullRatioProfile ProfileRequestID="NullRatioReq1" IsExact="true">
+        <DataSourceID>{9BBF10C2-3755-471E-A12C-B55F4FA80B01}</DataSourceID>
+        <Table DataSource="ARASH\ARASH_DEV_BI_MD" Database="pubs" Schema="dbo" Table="titles" RowCount="18" />
+        <Column Name="pub_id" SqlDbType="Char" MaxLength="4" Precision="255" Scale="255" LCID="1033" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        <NullCount>0</NullCount>
+      </ColumnNullRatioProfile>
+      <ColumnNullRatioProfile ProfileRequestID="NullRatioReq1" IsExact="true">
+        <DataSourceID>{9BBF10C2-3755-471E-A12C-B55F4FA80B01}</DataSourceID>
+        <Table DataSource="ARASH\ARASH_DEV_BI_MD" Database="pubs" Schema="dbo" Table="titles" RowCount="18" />
+        <Column Name="price" SqlDbType="Money" MaxLength="0" Precision="19" Scale="4" LCID="-1" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        <NullCount>2</NullCount>
+      </ColumnNullRatioProfile>
+      <ColumnNullRatioProfile ProfileRequestID="NullRatioReq1" IsExact="true">
+        <DataSourceID>{9BBF10C2-3755-471E-A12C-B55F4FA80B01}</DataSourceID>
+        <Table DataSource="ARASH\ARASH_DEV_BI_MD" Database="pubs" Schema="dbo" Table="titles" RowCount="18" />
+        <Column Name="advance" SqlDbType="Money" MaxLength="0" Precision="19" Scale="4" LCID="-1" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        <NullCount>2</NullCount>
+      </ColumnNullRatioProfile>
+      <ColumnNullRatioProfile ProfileRequestID="NullRatioReq1" IsExact="true">
+        <DataSourceID>{9BBF10C2-3755-471E-A12C-B55F4FA80B01}</DataSourceID>
+        <Table DataSource="ARASH\ARASH_DEV_BI_MD" Database="pubs" Schema="dbo" Table="titles" RowCount="18" />
+        <Column Name="royalty" SqlDbType="Int" MaxLength="0" Precision="10" Scale="0" LCID="-1" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        <NullCount>2</NullCount>
+      </ColumnNullRatioProfile>
+      <ColumnNullRatioProfile ProfileRequestID="NullRatioReq1" IsExact="true">
+        <DataSourceID>{9BBF10C2-3755-471E-A12C-B55F4FA80B01}</DataSourceID>
+        <Table DataSource="ARASH\ARASH_DEV_BI_MD" Database="pubs" Schema="dbo" Table="titles" RowCount="18" />
+        <Column Name="ytd_sales" SqlDbType="Int" MaxLength="0" Precision="10" Scale="0" LCID="-1" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        <NullCount>2</NullCount>
+      </ColumnNullRatioProfile>
+      <ColumnNullRatioProfile ProfileRequestID="NullRatioReq1" IsExact="true">
+        <DataSourceID>{9BBF10C2-3755-471E-A12C-B55F4FA80B01}</DataSourceID>
+        <Table DataSource="ARASH\ARASH_DEV_BI_MD" Database="pubs" Schema="dbo" Table="titles" RowCount="18" />
+        <Column Name="notes" SqlDbType="VarChar" MaxLength="200" Precision="255" Scale="255" LCID="1033" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        <NullCount>1</NullCount>
+      </ColumnNullRatioProfile>
+      <ColumnStatisticsProfile IsExact="true" ProfileRequestID="StatisticsReq1">
+        <DataSourceID>{9BBF10C2-3755-471E-A12C-B55F4FA80B01}</DataSourceID>
+        <Table DataSource="ARASH\ARASH_DEV_BI_MD" Database="pubs" Schema="dbo" Table="titles" RowCount="18" />
+        <Column Name="price" SqlDbType="Money" MaxLength="0" Precision="19" Scale="4" LCID="-1" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        <MinValue>2.9900</MinValue>
+        <MaxValue>22.9500</MaxValue>
+        <Mean>14.76625</Mean>
+        <StdDev>6.62564702029168</StdDev>
+      </ColumnStatisticsProfile>
+      <ColumnStatisticsProfile IsExact="true" ProfileRequestID="StatisticsReq1">
+        <DataSourceID>{9BBF10C2-3755-471E-A12C-B55F4FA80B01}</DataSourceID>
+        <Table DataSource="ARASH\ARASH_DEV_BI_MD" Database="pubs" Schema="dbo" Table="titles" RowCount="18" />
+        <Column Name="advance" SqlDbType="Money" MaxLength="0" Precision="19" Scale="4" LCID="-1" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        <MinValue>0.0000</MinValue>
+        <MaxValue>15000.0000</MaxValue>
+        <Mean>5962.5</Mean>
+        <StdDev>3408.34224733961</StdDev>
+      </ColumnStatisticsProfile>
+      <ColumnStatisticsProfile IsExact="true" ProfileRequestID="StatisticsReq1">
+        <DataSourceID>{9BBF10C2-3755-471E-A12C-B55F4FA80B01}</DataSourceID>
+        <Table DataSource="ARASH\ARASH_DEV_BI_MD" Database="pubs" Schema="dbo" Table="titles" RowCount="18" />
+        <Column Name="royalty" SqlDbType="Int" MaxLength="0" Precision="10" Scale="0" LCID="-1" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        <MinValue>10</MinValue>
+        <MaxValue>24</MaxValue>
+        <Mean>12.625</Mean>
+        <StdDev>4.62162038683404</StdDev>
+      </ColumnStatisticsProfile>
+      <ColumnStatisticsProfile IsExact="true" ProfileRequestID="StatisticsReq1">
+        <DataSourceID>{9BBF10C2-3755-471E-A12C-B55F4FA80B01}</DataSourceID>
+        <Table DataSource="ARASH\ARASH_DEV_BI_MD" Database="pubs" Schema="dbo" Table="titles" RowCount="18" />
+        <Column Name="ytd_sales" SqlDbType="Int" MaxLength="0" Precision="10" Scale="0" LCID="-1" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        <MinValue>111</MinValue>
+        <MaxValue>22246</MaxValue>
+        <Mean>6090.375</Mean>
+        <StdDev>6496.66698079677</StdDev>
+      </ColumnStatisticsProfile>
+      <ColumnStatisticsProfile IsExact="true" ProfileRequestID="StatisticsReq1">
+        <DataSourceID>{9BBF10C2-3755-471E-A12C-B55F4FA80B01}</DataSourceID>
+        <Table DataSource="ARASH\ARASH_DEV_BI_MD" Database="pubs" Schema="dbo" Table="titles" RowCount="18" />
+        <Column Name="pubdate" SqlDbType="DateTime" MaxLength="0" Precision="255" Scale="255" LCID="-1" CodePage="0" IsNullable="false" StringCompareOptions="0" />
+        <MinValue>1991-06-09T00:00:00.0000000</MinValue>
+        <MaxValue>2023-07-20T14:44:42.5230000</MaxValue>
+      </ColumnStatisticsProfile>
+      <ColumnLengthDistributionProfile ProfileRequestID="LengthDistReq1" IsExact="true">
+        <DataSourceID>{9BBF10C2-3755-471E-A12C-B55F4FA80B01}</DataSourceID>
+        <Table DataSource="ARASH\ARASH_DEV_BI_MD" Database="pubs" Schema="dbo" Table="titles" RowCount="18" />
+        <Column Name="title_id" SqlDbType="VarChar" MaxLength="6" Precision="255" Scale="255" LCID="1033" CodePage="0" IsNullable="false" StringCompareOptions="0" />
+        <IgnoreLeadingSpace>false</IgnoreLeadingSpace>
+        <IgnoreTrailingSpace>true</IgnoreTrailingSpace>
+        <MinLength>6</MinLength>
+        <MaxLength>6</MaxLength>
+        <LengthDistribution>
+          <LengthDistributionItem>
+            <Length>6</Length>
+            <Count>18</Count>
+          </LengthDistributionItem>
+        </LengthDistribution>
+      </ColumnLengthDistributionProfile>
+      <ColumnLengthDistributionProfile ProfileRequestID="LengthDistReq1" IsExact="true">
+        <DataSourceID>{9BBF10C2-3755-471E-A12C-B55F4FA80B01}</DataSourceID>
+        <Table DataSource="ARASH\ARASH_DEV_BI_MD" Database="pubs" Schema="dbo" Table="titles" RowCount="18" />
+        <Column Name="title" SqlDbType="VarChar" MaxLength="80" Precision="255" Scale="255" LCID="1033" CodePage="0" IsNullable="false" StringCompareOptions="0" />
+        <IgnoreLeadingSpace>false</IgnoreLeadingSpace>
+        <IgnoreTrailingSpace>true</IgnoreTrailingSpace>
+        <MinLength>13</MinLength>
+        <MaxLength>63</MaxLength>
+        <LengthDistribution>
+          <LengthDistributionItem>
+            <Length>13</Length>
+            <Count>1</Count>
+          </LengthDistributionItem>
+          <LengthDistributionItem>
+            <Length>14</Length>
+            <Count>1</Count>
+          </LengthDistributionItem>
+          <LengthDistributionItem>
+            <Length>17</Length>
+            <Count>1</Count>
+          </LengthDistributionItem>
+          <LengthDistributionItem>
+            <Length>19</Length>
+            <Count>1</Count>
+          </LengthDistributionItem>
+          <LengthDistributionItem>
+            <Length>21</Length>
+            <Count>1</Count>
+          </LengthDistributionItem>
+          <LengthDistributionItem>
+            <Length>24</Length>
+            <Count>1</Count>
+          </LengthDistributionItem>
+          <LengthDistributionItem>
+            <Length>25</Length>
+            <Count>1</Count>
+          </LengthDistributionItem>
+          <LengthDistributionItem>
+            <Length>29</Length>
+            <Count>1</Count>
+          </LengthDistributionItem>
+          <LengthDistributionItem>
+            <Length>31</Length>
+            <Count>1</Count>
+          </LengthDistributionItem>
+          <LengthDistributionItem>
+            <Length>33</Length>
+            <Count>1</Count>
+          </LengthDistributionItem>
+          <LengthDistributionItem>
+            <Length>34</Length>
+            <Count>1</Count>
+          </LengthDistributionItem>
+          <LengthDistributionItem>
+            <Length>35</Length>
+            <Count>2</Count>
+          </LengthDistributionItem>
+          <LengthDistributionItem>
+            <Length>41</Length>
+            <Count>1</Count>
+          </LengthDistributionItem>
+          <LengthDistributionItem>
+            <Length>45</Length>
+            <Count>1</Count>
+          </LengthDistributionItem>
+          <LengthDistributionItem>
+            <Length>52</Length>
+            <Count>1</Count>
+          </LengthDistributionItem>
+          <LengthDistributionItem>
+            <Length>63</Length>
+            <Count>2</Count>
+          </LengthDistributionItem>
+        </LengthDistribution>
+      </ColumnLengthDistributionProfile>
+      <ColumnLengthDistributionProfile ProfileRequestID="LengthDistReq1" IsExact="true">
+        <DataSourceID>{9BBF10C2-3755-471E-A12C-B55F4FA80B01}</DataSourceID>
+        <Table DataSource="ARASH\ARASH_DEV_BI_MD" Database="pubs" Schema="dbo" Table="titles" RowCount="18" />
+        <Column Name="type" SqlDbType="Char" MaxLength="12" Precision="255" Scale="255" LCID="1033" CodePage="0" IsNullable="false" StringCompareOptions="0" />
+        <IgnoreLeadingSpace>false</IgnoreLeadingSpace>
+        <IgnoreTrailingSpace>true</IgnoreTrailingSpace>
+        <MinLength>8</MinLength>
+        <MaxLength>12</MaxLength>
+        <LengthDistribution>
+          <LengthDistributionItem>
+            <Length>8</Length>
+            <Count>6</Count>
+          </LengthDistributionItem>
+          <LengthDistributionItem>
+            <Length>9</Length>
+            <Count>4</Count>
+          </LengthDistributionItem>
+          <LengthDistributionItem>
+            <Length>10</Length>
+            <Count>5</Count>
+          </LengthDistributionItem>
+          <LengthDistributionItem>
+            <Length>12</Length>
+            <Count>3</Count>
+          </LengthDistributionItem>
+        </LengthDistribution>
+      </ColumnLengthDistributionProfile>
+      <ColumnLengthDistributionProfile ProfileRequestID="LengthDistReq1" IsExact="true">
+        <DataSourceID>{9BBF10C2-3755-471E-A12C-B55F4FA80B01}</DataSourceID>
+        <Table DataSource="ARASH\ARASH_DEV_BI_MD" Database="pubs" Schema="dbo" Table="titles" RowCount="18" />
+        <Column Name="pub_id" SqlDbType="Char" MaxLength="4" Precision="255" Scale="255" LCID="1033" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        <IgnoreLeadingSpace>false</IgnoreLeadingSpace>
+        <IgnoreTrailingSpace>true</IgnoreTrailingSpace>
+        <MinLength>4</MinLength>
+        <MaxLength>4</MaxLength>
+        <LengthDistribution>
+          <LengthDistributionItem>
+            <Length>4</Length>
+            <Count>18</Count>
+          </LengthDistributionItem>
+        </LengthDistribution>
+      </ColumnLengthDistributionProfile>
+      <ColumnLengthDistributionProfile ProfileRequestID="LengthDistReq1" IsExact="true">
+        <DataSourceID>{9BBF10C2-3755-471E-A12C-B55F4FA80B01}</DataSourceID>
+        <Table DataSource="ARASH\ARASH_DEV_BI_MD" Database="pubs" Schema="dbo" Table="titles" RowCount="18" />
+        <Column Name="notes" SqlDbType="VarChar" MaxLength="200" Precision="255" Scale="255" LCID="1033" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        <IgnoreLeadingSpace>false</IgnoreLeadingSpace>
+        <IgnoreTrailingSpace>true</IgnoreTrailingSpace>
+        <MinLength>38</MinLength>
+        <MaxLength>179</MaxLength>
+        <LengthDistribution>
+          <LengthDistributionItem>
+            <Length>38</Length>
+            <Count>1</Count>
+          </LengthDistributionItem>
+          <LengthDistributionItem>
+            <Length>52</Length>
+            <Count>1</Count>
+          </LengthDistributionItem>
+          <LengthDistributionItem>
+            <Length>72</Length>
+            <Count>1</Count>
+          </LengthDistributionItem>
+          <LengthDistributionItem>
+            <Length>76</Length>
+            <Count>1</Count>
+          </LengthDistributionItem>
+          <LengthDistributionItem>
+            <Length>80</Length>
+            <Count>1</Count>
+          </LengthDistributionItem>
+          <LengthDistributionItem>
+            <Length>81</Length>
+            <Count>1</Count>
+          </LengthDistributionItem>
+          <LengthDistributionItem>
+            <Length>89</Length>
+            <Count>1</Count>
+          </LengthDistributionItem>
+          <LengthDistributionItem>
+            <Length>91</Length>
+            <Count>1</Count>
+          </LengthDistributionItem>
+          <LengthDistributionItem>
+            <Length>92</Length>
+            <Count>1</Count>
+          </LengthDistributionItem>
+          <LengthDistributionItem>
+            <Length>95</Length>
+            <Count>1</Count>
+          </LengthDistributionItem>
+          <LengthDistributionItem>
+            <Length>100</Length>
+            <Count>1</Count>
+          </LengthDistributionItem>
+          <LengthDistributionItem>
+            <Length>101</Length>
+            <Count>1</Count>
+          </LengthDistributionItem>
+          <LengthDistributionItem>
+            <Length>119</Length>
+            <Count>1</Count>
+          </LengthDistributionItem>
+          <LengthDistributionItem>
+            <Length>123</Length>
+            <Count>2</Count>
+          </LengthDistributionItem>
+          <LengthDistributionItem>
+            <Length>137</Length>
+            <Count>1</Count>
+          </LengthDistributionItem>
+          <LengthDistributionItem>
+            <Length>179</Length>
+            <Count>1</Count>
+          </LengthDistributionItem>
+        </LengthDistribution>
+      </ColumnLengthDistributionProfile>
+      <ColumnValueDistributionProfile IsExact="true" ProfileRequestID="ValueDistReq1">
+        <DataSourceID>{9BBF10C2-3755-471E-A12C-B55F4FA80B01}</DataSourceID>
+        <Table DataSource="ARASH\ARASH_DEV_BI_MD" Database="pubs" Schema="dbo" Table="titles" RowCount="18" />
+        <Column Name="title_id" SqlDbType="VarChar" MaxLength="6" Precision="255" Scale="255" LCID="1033" CodePage="0" IsNullable="false" StringCompareOptions="0" />
+        <NumberOfDistinctValues>18</NumberOfDistinctValues>
+        <ValueDistribution>
+          <ValueDistributionItem>
+            <Value>PC1035</Value>
+            <Count>1</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>PS1372</Value>
+            <Count>1</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>BU1111</Value>
+            <Count>1</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>PS7777</Value>
+            <Count>1</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>TC4203</Value>
+            <Count>1</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>PS2091</Value>
+            <Count>1</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>PS2106</Value>
+            <Count>1</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>PC9999</Value>
+            <Count>1</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>TC3218</Value>
+            <Count>1</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>PS3333</Value>
+            <Count>1</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>PC8888</Value>
+            <Count>1</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>MC2222</Value>
+            <Count>1</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>BU7832</Value>
+            <Count>1</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>TC7777</Value>
+            <Count>1</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>BU1032</Value>
+            <Count>1</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>MC3021</Value>
+            <Count>1</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>MC3026</Value>
+            <Count>1</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>BU2075</Value>
+            <Count>1</Count>
+          </ValueDistributionItem>
+        </ValueDistribution>
+      </ColumnValueDistributionProfile>
+      <CandidateKeyProfile IsExact="true" ProfileRequestID="KeyReq1">
+        <DataSourceID>{9BBF10C2-3755-471E-A12C-B55F4FA80B01}</DataSourceID>
+        <Table DataSource="ARASH\ARASH_DEV_BI_MD" Database="pubs" Schema="dbo" Table="titles" RowCount="18" />
+        <KeyColumns>
+          <Column Name="title" SqlDbType="VarChar" MaxLength="80" Precision="255" Scale="255" LCID="1033" CodePage="0" IsNullable="false" StringCompareOptions="0" />
+        </KeyColumns>
+        <IsExactKey>true</IsExactKey>
+      </CandidateKeyProfile>
+      <ColumnValueDistributionProfile IsExact="true" ProfileRequestID="ValueDistReq1">
+        <DataSourceID>{9BBF10C2-3755-471E-A12C-B55F4FA80B01}</DataSourceID>
+        <Table DataSource="ARASH\ARASH_DEV_BI_MD" Database="pubs" Schema="dbo" Table="titles" RowCount="18" />
+        <Column Name="title" SqlDbType="VarChar" MaxLength="80" Precision="255" Scale="255" LCID="1033" CodePage="0" IsNullable="false" StringCompareOptions="0" />
+        <NumberOfDistinctValues>18</NumberOfDistinctValues>
+        <ValueDistribution>
+          <ValueDistributionItem>
+            <Value>But Is It User Friendly?</Value>
+            <Count>1</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Computer Phobic AND Non-Phobic Individuals: Behavior Variations</Value>
+            <Count>1</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Cooking with Computers: Surreptitious Balance Sheets</Value>
+            <Count>1</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Emotional Security: A New Algorithm</Value>
+            <Count>1</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Fifty Years in Buckingham Palace Kitchens</Value>
+            <Count>1</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Is Anger the Enemy?</Value>
+            <Count>1</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Life Without Fear</Value>
+            <Count>1</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Net Etiquette</Value>
+            <Count>1</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Onions, Leeks, and Garlic: Cooking Secrets of the Mediterranean</Value>
+            <Count>1</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Prolonged Data Deprivation: Four Case Studies</Value>
+            <Count>1</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Secrets of Silicon Valley</Value>
+            <Count>1</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Silicon Valley Gastronomic Treats</Value>
+            <Count>1</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Straight Talk About Computers</Value>
+            <Count>1</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Sushi, Anyone?</Value>
+            <Count>1</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>The Busy Executive's Database Guide</Value>
+            <Count>1</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>The Gourmet Microwave</Value>
+            <Count>1</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>The Psychology of Computer Cooking</Value>
+            <Count>1</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>You Can Combat Computer Stress!</Value>
+            <Count>1</Count>
+          </ValueDistributionItem>
+        </ValueDistribution>
+      </ColumnValueDistributionProfile>
+      <ColumnValueDistributionProfile IsExact="true" ProfileRequestID="ValueDistReq1">
+        <DataSourceID>{9BBF10C2-3755-471E-A12C-B55F4FA80B01}</DataSourceID>
+        <Table DataSource="ARASH\ARASH_DEV_BI_MD" Database="pubs" Schema="dbo" Table="titles" RowCount="18" />
+        <Column Name="type" SqlDbType="Char" MaxLength="12" Precision="255" Scale="255" LCID="1033" CodePage="0" IsNullable="false" StringCompareOptions="0" />
+        <NumberOfDistinctValues>6</NumberOfDistinctValues>
+        <ValueDistribution>
+          <ValueDistributionItem>
+            <Value>business    </Value>
+            <Count>4</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>mod_cook    </Value>
+            <Count>2</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>popular_comp</Value>
+            <Count>3</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>psychology  </Value>
+            <Count>5</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>trad_cook   </Value>
+            <Count>3</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>UNDECIDED   </Value>
+            <Count>1</Count>
+          </ValueDistributionItem>
+        </ValueDistribution>
+      </ColumnValueDistributionProfile>
+      <ColumnValueDistributionProfile IsExact="true" ProfileRequestID="ValueDistReq1">
+        <DataSourceID>{9BBF10C2-3755-471E-A12C-B55F4FA80B01}</DataSourceID>
+        <Table DataSource="ARASH\ARASH_DEV_BI_MD" Database="pubs" Schema="dbo" Table="titles" RowCount="18" />
+        <Column Name="pub_id" SqlDbType="Char" MaxLength="4" Precision="255" Scale="255" LCID="1033" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        <NumberOfDistinctValues>3</NumberOfDistinctValues>
+        <ValueDistribution>
+          <ValueDistributionItem>
+            <Value>0736</Value>
+            <Count>5</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>0877</Value>
+            <Count>7</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>1389</Value>
+            <Count>6</Count>
+          </ValueDistributionItem>
+        </ValueDistribution>
+      </ColumnValueDistributionProfile>
+      <ColumnValueDistributionProfile IsExact="true" ProfileRequestID="ValueDistReq1">
+        <DataSourceID>{9BBF10C2-3755-471E-A12C-B55F4FA80B01}</DataSourceID>
+        <Table DataSource="ARASH\ARASH_DEV_BI_MD" Database="pubs" Schema="dbo" Table="titles" RowCount="18" />
+        <Column Name="royalty" SqlDbType="Int" MaxLength="0" Precision="10" Scale="0" LCID="-1" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        <NumberOfDistinctValues>5</NumberOfDistinctValues>
+        <ValueDistribution>
+          <ValueDistributionItem>
+            <Value>10</Value>
+            <Count>10</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>12</Value>
+            <Count>2</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>14</Value>
+            <Count>1</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>16</Value>
+            <Count>1</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>24</Value>
+            <Count>2</Count>
+          </ValueDistributionItem>
+        </ValueDistribution>
+      </ColumnValueDistributionProfile>
+      <ColumnValueDistributionProfile IsExact="true" ProfileRequestID="ValueDistReq1">
+        <DataSourceID>{9BBF10C2-3755-471E-A12C-B55F4FA80B01}</DataSourceID>
+        <Table DataSource="ARASH\ARASH_DEV_BI_MD" Database="pubs" Schema="dbo" Table="titles" RowCount="18" />
+        <Column Name="ytd_sales" SqlDbType="Int" MaxLength="0" Precision="10" Scale="0" LCID="-1" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        <NumberOfDistinctValues>12</NumberOfDistinctValues>
+        <ValueDistribution>
+          <ValueDistributionItem>
+            <Value>111</Value>
+            <Count>1</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>375</Value>
+            <Count>2</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>2032</Value>
+            <Count>1</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>2045</Value>
+            <Count>1</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>3336</Value>
+            <Count>1</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>3876</Value>
+            <Count>1</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>4072</Value>
+            <Count>1</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>4095</Value>
+            <Count>4</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>8780</Value>
+            <Count>1</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>15096</Value>
+            <Count>1</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>18722</Value>
+            <Count>1</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>22246</Value>
+            <Count>1</Count>
+          </ValueDistributionItem>
+        </ValueDistribution>
+      </ColumnValueDistributionProfile>
+      <CandidateKeyProfile IsExact="true" ProfileRequestID="KeyReq1">
+        <DataSourceID>{9BBF10C2-3755-471E-A12C-B55F4FA80B01}</DataSourceID>
+        <Table DataSource="ARASH\ARASH_DEV_BI_MD" Database="pubs" Schema="dbo" Table="titles" RowCount="18" />
+        <KeyColumns>
+          <Column Name="notes" SqlDbType="VarChar" MaxLength="200" Precision="255" Scale="255" LCID="1033" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        </KeyColumns>
+        <IsExactKey>true</IsExactKey>
+      </CandidateKeyProfile>
+      <ColumnValueDistributionProfile IsExact="true" ProfileRequestID="ValueDistReq1">
+        <DataSourceID>{9BBF10C2-3755-471E-A12C-B55F4FA80B01}</DataSourceID>
+        <Table DataSource="ARASH\ARASH_DEV_BI_MD" Database="pubs" Schema="dbo" Table="titles" RowCount="18" />
+        <Column Name="notes" SqlDbType="VarChar" MaxLength="200" Precision="255" Scale="255" LCID="1033" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        <NumberOfDistinctValues>17</NumberOfDistinctValues>
+        <ValueDistribution>
+          <ValueDistributionItem>
+            <Value>A must for the specialist, this book examines the difference between those who hate and fear computers and those who don't.</Value>
+            <Count>1</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>A must-read for computer conferencing.</Value>
+            <Count>1</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>A survey of software for the naive user, focusing on the 'friendliness' of each.</Value>
+            <Count>1</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>An overview of available database systems with emphasis on common business applications. Illustrated.</Value>
+            <Count>1</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Annotated analysis of what computers can do for you: a no-hype guide for the critical user.</Value>
+            <Count>1</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Carefully researched study of the effects of strong emotions on the body. Metabolic charts included.</Value>
+            <Count>1</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Detailed instructions on how to make authentic Japanese sushi in your spare time.</Value>
+            <Count>1</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Favorite recipes for quick, easy, and elegant meals.</Value>
+            <Count>1</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Helpful hints on how to use your electronic resources to the best advantage.</Value>
+            <Count>1</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>More anecdotes from the Queen's favorite cook describing life among English royalty. Recipes, techniques, tender vignettes.</Value>
+            <Count>1</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Muckraking reporting on the world's largest computer hardware and software manufacturers.</Value>
+            <Count>1</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>New exercise, meditation, and nutritional techniques that can reduce the shock of daily interactions. Popular audience. Sample menus included, exercise video available separately.</Value>
+            <Count>1</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Profusely illustrated in color, this makes a wonderful gift book for a cuisine-oriented friend.</Value>
+            <Count>1</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Protecting yourself and your loved ones from undue emotional stress in the modern world. Use of computer and nutritional aids emphasized.</Value>
+            <Count>1</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>The latest medical and psychological techniques for living with the electronic office. Easy-to-understand explanations.</Value>
+            <Count>1</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Traditional French gourmet recipes adapted for modern microwave cooking.</Value>
+            <Count>1</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>What happens when the data runs dry?  Searching evaluations of information-shortage effects.</Value>
+            <Count>1</Count>
+          </ValueDistributionItem>
+        </ValueDistribution>
+      </ColumnValueDistributionProfile>
+      <ColumnValueDistributionProfile IsExact="true" ProfileRequestID="ValueDistReq1">
+        <DataSourceID>{9BBF10C2-3755-471E-A12C-B55F4FA80B01}</DataSourceID>
+        <Table DataSource="ARASH\ARASH_DEV_BI_MD" Database="pubs" Schema="dbo" Table="titles" RowCount="18" />
+        <Column Name="pubdate" SqlDbType="DateTime" MaxLength="0" Precision="255" Scale="255" LCID="-1" CodePage="0" IsNullable="false" StringCompareOptions="0" />
+        <NumberOfDistinctValues>10</NumberOfDistinctValues>
+        <ValueDistribution>
+          <ValueDistributionItem>
+            <Value>1991-06-09T00:00:00.0000000</Value>
+            <Count>2</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>1991-06-12T00:00:00.0000000</Value>
+            <Count>5</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>1991-06-15T00:00:00.0000000</Value>
+            <Count>1</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>1991-06-18T00:00:00.0000000</Value>
+            <Count>1</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>1991-06-22T00:00:00.0000000</Value>
+            <Count>1</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>1991-06-30T00:00:00.0000000</Value>
+            <Count>2</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>1991-10-05T00:00:00.0000000</Value>
+            <Count>1</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>1991-10-21T00:00:00.0000000</Value>
+            <Count>2</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>1994-06-12T00:00:00.0000000</Value>
+            <Count>1</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>2023-07-20T14:44:42.5230000</Value>
+            <Count>2</Count>
+          </ValueDistributionItem>
+        </ValueDistribution>
+      </ColumnValueDistributionProfile>
+      <ColumnNullRatioProfile ProfileRequestID="NullRatioReq" IsExact="true">
+        <DataSourceID>{9BBF10C2-3755-471E-A12C-B55F4FA80B01}</DataSourceID>
+        <Table DataSource="ARASH\ARASH_DEV_BI_MD" Database="pubs" Schema="dbo" Table="authors" RowCount="-1" />
+        <Column Name="au_id" SqlDbType="VarChar" MaxLength="11" Precision="255" Scale="255" LCID="1033" CodePage="0" IsNullable="false" StringCompareOptions="0" />
+        <NullCount>0</NullCount>
+      </ColumnNullRatioProfile>
+      <ColumnNullRatioProfile ProfileRequestID="NullRatioReq" IsExact="true">
+        <DataSourceID>{9BBF10C2-3755-471E-A12C-B55F4FA80B01}</DataSourceID>
+        <Table DataSource="ARASH\ARASH_DEV_BI_MD" Database="pubs" Schema="dbo" Table="authors" RowCount="-1" />
+        <Column Name="au_lname" SqlDbType="VarChar" MaxLength="40" Precision="255" Scale="255" LCID="1033" CodePage="0" IsNullable="false" StringCompareOptions="0" />
+        <NullCount>0</NullCount>
+      </ColumnNullRatioProfile>
+      <ColumnNullRatioProfile ProfileRequestID="NullRatioReq" IsExact="true">
+        <DataSourceID>{9BBF10C2-3755-471E-A12C-B55F4FA80B01}</DataSourceID>
+        <Table DataSource="ARASH\ARASH_DEV_BI_MD" Database="pubs" Schema="dbo" Table="authors" RowCount="-1" />
+        <Column Name="au_fname" SqlDbType="VarChar" MaxLength="20" Precision="255" Scale="255" LCID="1033" CodePage="0" IsNullable="false" StringCompareOptions="0" />
+        <NullCount>0</NullCount>
+      </ColumnNullRatioProfile>
+      <ColumnNullRatioProfile ProfileRequestID="NullRatioReq" IsExact="true">
+        <DataSourceID>{9BBF10C2-3755-471E-A12C-B55F4FA80B01}</DataSourceID>
+        <Table DataSource="ARASH\ARASH_DEV_BI_MD" Database="pubs" Schema="dbo" Table="authors" RowCount="-1" />
+        <Column Name="phone" SqlDbType="Char" MaxLength="12" Precision="255" Scale="255" LCID="1033" CodePage="0" IsNullable="false" StringCompareOptions="0" />
+        <NullCount>0</NullCount>
+      </ColumnNullRatioProfile>
+      <ColumnNullRatioProfile ProfileRequestID="NullRatioReq" IsExact="true">
+        <DataSourceID>{9BBF10C2-3755-471E-A12C-B55F4FA80B01}</DataSourceID>
+        <Table DataSource="ARASH\ARASH_DEV_BI_MD" Database="pubs" Schema="dbo" Table="authors" RowCount="-1" />
+        <Column Name="contract" SqlDbType="Bit" MaxLength="0" Precision="255" Scale="255" LCID="-1" CodePage="0" IsNullable="false" StringCompareOptions="0" />
+        <NullCount>0</NullCount>
+      </ColumnNullRatioProfile>
+      <CandidateKeyProfile IsExact="true" ProfileRequestID="KeyReq">
+        <DataSourceID>{9BBF10C2-3755-471E-A12C-B55F4FA80B01}</DataSourceID>
+        <Table DataSource="ARASH\ARASH_DEV_BI_MD" Database="pubs" Schema="dbo" Table="authors" RowCount="-1" />
+        <KeyColumns>
+          <Column Name="au_id" SqlDbType="VarChar" MaxLength="11" Precision="255" Scale="255" LCID="1033" CodePage="0" IsNullable="false" StringCompareOptions="0" />
+        </KeyColumns>
+        <IsExactKey>true</IsExactKey>
+      </CandidateKeyProfile>
+      <ColumnNullRatioProfile ProfileRequestID="NullRatioReq" IsExact="true">
+        <DataSourceID>{9BBF10C2-3755-471E-A12C-B55F4FA80B01}</DataSourceID>
+        <Table DataSource="ARASH\ARASH_DEV_BI_MD" Database="pubs" Schema="dbo" Table="authors" RowCount="23" />
+        <Column Name="address" SqlDbType="VarChar" MaxLength="40" Precision="255" Scale="255" LCID="1033" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        <NullCount>0</NullCount>
+      </ColumnNullRatioProfile>
+      <ColumnNullRatioProfile ProfileRequestID="NullRatioReq" IsExact="true">
+        <DataSourceID>{9BBF10C2-3755-471E-A12C-B55F4FA80B01}</DataSourceID>
+        <Table DataSource="ARASH\ARASH_DEV_BI_MD" Database="pubs" Schema="dbo" Table="authors" RowCount="23" />
+        <Column Name="city" SqlDbType="VarChar" MaxLength="20" Precision="255" Scale="255" LCID="1033" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        <NullCount>0</NullCount>
+      </ColumnNullRatioProfile>
+      <ColumnNullRatioProfile ProfileRequestID="NullRatioReq" IsExact="true">
+        <DataSourceID>{9BBF10C2-3755-471E-A12C-B55F4FA80B01}</DataSourceID>
+        <Table DataSource="ARASH\ARASH_DEV_BI_MD" Database="pubs" Schema="dbo" Table="authors" RowCount="23" />
+        <Column Name="state" SqlDbType="Char" MaxLength="2" Precision="255" Scale="255" LCID="1033" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        <NullCount>0</NullCount>
+      </ColumnNullRatioProfile>
+      <ColumnNullRatioProfile ProfileRequestID="NullRatioReq" IsExact="true">
+        <DataSourceID>{9BBF10C2-3755-471E-A12C-B55F4FA80B01}</DataSourceID>
+        <Table DataSource="ARASH\ARASH_DEV_BI_MD" Database="pubs" Schema="dbo" Table="authors" RowCount="23" />
+        <Column Name="zip" SqlDbType="Char" MaxLength="5" Precision="255" Scale="255" LCID="1033" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        <NullCount>0</NullCount>
+      </ColumnNullRatioProfile>
+      <ColumnLengthDistributionProfile ProfileRequestID="LengthDistReq" IsExact="true">
+        <DataSourceID>{9BBF10C2-3755-471E-A12C-B55F4FA80B01}</DataSourceID>
+        <Table DataSource="ARASH\ARASH_DEV_BI_MD" Database="pubs" Schema="dbo" Table="authors" RowCount="23" />
+        <Column Name="au_id" SqlDbType="VarChar" MaxLength="11" Precision="255" Scale="255" LCID="1033" CodePage="0" IsNullable="false" StringCompareOptions="0" />
+        <IgnoreLeadingSpace>false</IgnoreLeadingSpace>
+        <IgnoreTrailingSpace>true</IgnoreTrailingSpace>
+        <MinLength>11</MinLength>
+        <MaxLength>11</MaxLength>
+        <LengthDistribution>
+          <LengthDistributionItem>
+            <Length>11</Length>
+            <Count>23</Count>
+          </LengthDistributionItem>
+        </LengthDistribution>
+      </ColumnLengthDistributionProfile>
+      <ColumnLengthDistributionProfile ProfileRequestID="LengthDistReq" IsExact="true">
+        <DataSourceID>{9BBF10C2-3755-471E-A12C-B55F4FA80B01}</DataSourceID>
+        <Table DataSource="ARASH\ARASH_DEV_BI_MD" Database="pubs" Schema="dbo" Table="authors" RowCount="23" />
+        <Column Name="au_lname" SqlDbType="VarChar" MaxLength="40" Precision="255" Scale="255" LCID="1033" CodePage="0" IsNullable="false" StringCompareOptions="0" />
+        <IgnoreLeadingSpace>false</IgnoreLeadingSpace>
+        <IgnoreTrailingSpace>true</IgnoreTrailingSpace>
+        <MinLength>4</MinLength>
+        <MaxLength>14</MaxLength>
+        <LengthDistribution>
+          <LengthDistributionItem>
+            <Length>4</Length>
+            <Count>1</Count>
+          </LengthDistributionItem>
+          <LengthDistributionItem>
+            <Length>5</Length>
+            <Count>3</Count>
+          </LengthDistributionItem>
+          <LengthDistributionItem>
+            <Length>6</Length>
+            <Count>7</Count>
+          </LengthDistributionItem>
+          <LengthDistributionItem>
+            <Length>7</Length>
+            <Count>1</Count>
+          </LengthDistributionItem>
+          <LengthDistributionItem>
+            <Length>8</Length>
+            <Count>7</Count>
+          </LengthDistributionItem>
+          <LengthDistributionItem>
+            <Length>10</Length>
+            <Count>2</Count>
+          </LengthDistributionItem>
+          <LengthDistributionItem>
+            <Length>12</Length>
+            <Count>1</Count>
+          </LengthDistributionItem>
+          <LengthDistributionItem>
+            <Length>14</Length>
+            <Count>1</Count>
+          </LengthDistributionItem>
+        </LengthDistribution>
+      </ColumnLengthDistributionProfile>
+      <ColumnLengthDistributionProfile ProfileRequestID="LengthDistReq" IsExact="true">
+        <DataSourceID>{9BBF10C2-3755-471E-A12C-B55F4FA80B01}</DataSourceID>
+        <Table DataSource="ARASH\ARASH_DEV_BI_MD" Database="pubs" Schema="dbo" Table="authors" RowCount="23" />
+        <Column Name="au_fname" SqlDbType="VarChar" MaxLength="20" Precision="255" Scale="255" LCID="1033" CodePage="0" IsNullable="false" StringCompareOptions="0" />
+        <IgnoreLeadingSpace>false</IgnoreLeadingSpace>
+        <IgnoreTrailingSpace>true</IgnoreTrailingSpace>
+        <MinLength>3</MinLength>
+        <MaxLength>11</MaxLength>
+        <LengthDistribution>
+          <LengthDistributionItem>
+            <Length>3</Length>
+            <Count>1</Count>
+          </LengthDistributionItem>
+          <LengthDistributionItem>
+            <Length>4</Length>
+            <Count>4</Count>
+          </LengthDistributionItem>
+          <LengthDistributionItem>
+            <Length>5</Length>
+            <Count>3</Count>
+          </LengthDistributionItem>
+          <LengthDistributionItem>
+            <Length>6</Length>
+            <Count>5</Count>
+          </LengthDistributionItem>
+          <LengthDistributionItem>
+            <Length>7</Length>
+            <Count>6</Count>
+          </LengthDistributionItem>
+          <LengthDistributionItem>
+            <Length>8</Length>
+            <Count>3</Count>
+          </LengthDistributionItem>
+          <LengthDistributionItem>
+            <Length>11</Length>
+            <Count>1</Count>
+          </LengthDistributionItem>
+        </LengthDistribution>
+      </ColumnLengthDistributionProfile>
+      <ColumnLengthDistributionProfile ProfileRequestID="LengthDistReq" IsExact="true">
+        <DataSourceID>{9BBF10C2-3755-471E-A12C-B55F4FA80B01}</DataSourceID>
+        <Table DataSource="ARASH\ARASH_DEV_BI_MD" Database="pubs" Schema="dbo" Table="authors" RowCount="23" />
+        <Column Name="phone" SqlDbType="Char" MaxLength="12" Precision="255" Scale="255" LCID="1033" CodePage="0" IsNullable="false" StringCompareOptions="0" />
+        <IgnoreLeadingSpace>false</IgnoreLeadingSpace>
+        <IgnoreTrailingSpace>true</IgnoreTrailingSpace>
+        <MinLength>12</MinLength>
+        <MaxLength>12</MaxLength>
+        <LengthDistribution>
+          <LengthDistributionItem>
+            <Length>12</Length>
+            <Count>23</Count>
+          </LengthDistributionItem>
+        </LengthDistribution>
+      </ColumnLengthDistributionProfile>
+      <ColumnLengthDistributionProfile ProfileRequestID="LengthDistReq" IsExact="true">
+        <DataSourceID>{9BBF10C2-3755-471E-A12C-B55F4FA80B01}</DataSourceID>
+        <Table DataSource="ARASH\ARASH_DEV_BI_MD" Database="pubs" Schema="dbo" Table="authors" RowCount="23" />
+        <Column Name="address" SqlDbType="VarChar" MaxLength="40" Precision="255" Scale="255" LCID="1033" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        <IgnoreLeadingSpace>false</IgnoreLeadingSpace>
+        <IgnoreTrailingSpace>true</IgnoreTrailingSpace>
+        <MinLength>10</MinLength>
+        <MaxLength>20</MaxLength>
+        <LengthDistribution>
+          <LengthDistributionItem>
+            <Length>10</Length>
+            <Count>2</Count>
+          </LengthDistributionItem>
+          <LengthDistributionItem>
+            <Length>12</Length>
+            <Count>1</Count>
+          </LengthDistributionItem>
+          <LengthDistributionItem>
+            <Length>13</Length>
+            <Count>1</Count>
+          </LengthDistributionItem>
+          <LengthDistributionItem>
+            <Length>14</Length>
+            <Count>4</Count>
+          </LengthDistributionItem>
+          <LengthDistributionItem>
+            <Length>15</Length>
+            <Count>4</Count>
+          </LengthDistributionItem>
+          <LengthDistributionItem>
+            <Length>16</Length>
+            <Count>4</Count>
+          </LengthDistributionItem>
+          <LengthDistributionItem>
+            <Length>17</Length>
+            <Count>2</Count>
+          </LengthDistributionItem>
+          <LengthDistributionItem>
+            <Length>18</Length>
+            <Count>3</Count>
+          </LengthDistributionItem>
+          <LengthDistributionItem>
+            <Length>20</Length>
+            <Count>2</Count>
+          </LengthDistributionItem>
+        </LengthDistribution>
+      </ColumnLengthDistributionProfile>
+      <ColumnLengthDistributionProfile ProfileRequestID="LengthDistReq" IsExact="true">
+        <DataSourceID>{9BBF10C2-3755-471E-A12C-B55F4FA80B01}</DataSourceID>
+        <Table DataSource="ARASH\ARASH_DEV_BI_MD" Database="pubs" Schema="dbo" Table="authors" RowCount="23" />
+        <Column Name="city" SqlDbType="VarChar" MaxLength="20" Precision="255" Scale="255" LCID="1033" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        <IgnoreLeadingSpace>false</IgnoreLeadingSpace>
+        <IgnoreTrailingSpace>true</IgnoreTrailingSpace>
+        <MinLength>4</MinLength>
+        <MaxLength>14</MaxLength>
+        <LengthDistribution>
+          <LengthDistributionItem>
+            <Length>4</Length>
+            <Count>1</Count>
+          </LengthDistributionItem>
+          <LengthDistributionItem>
+            <Length>6</Length>
+            <Count>1</Count>
+          </LengthDistributionItem>
+          <LengthDistributionItem>
+            <Length>7</Length>
+            <Count>5</Count>
+          </LengthDistributionItem>
+          <LengthDistributionItem>
+            <Length>8</Length>
+            <Count>4</Count>
+          </LengthDistributionItem>
+          <LengthDistributionItem>
+            <Length>9</Length>
+            <Count>7</Count>
+          </LengthDistributionItem>
+          <LengthDistributionItem>
+            <Length>10</Length>
+            <Count>1</Count>
+          </LengthDistributionItem>
+          <LengthDistributionItem>
+            <Length>12</Length>
+            <Count>1</Count>
+          </LengthDistributionItem>
+          <LengthDistributionItem>
+            <Length>13</Length>
+            <Count>1</Count>
+          </LengthDistributionItem>
+          <LengthDistributionItem>
+            <Length>14</Length>
+            <Count>2</Count>
+          </LengthDistributionItem>
+        </LengthDistribution>
+      </ColumnLengthDistributionProfile>
+      <ColumnLengthDistributionProfile ProfileRequestID="LengthDistReq" IsExact="true">
+        <DataSourceID>{9BBF10C2-3755-471E-A12C-B55F4FA80B01}</DataSourceID>
+        <Table DataSource="ARASH\ARASH_DEV_BI_MD" Database="pubs" Schema="dbo" Table="authors" RowCount="23" />
+        <Column Name="state" SqlDbType="Char" MaxLength="2" Precision="255" Scale="255" LCID="1033" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        <IgnoreLeadingSpace>false</IgnoreLeadingSpace>
+        <IgnoreTrailingSpace>true</IgnoreTrailingSpace>
+        <MinLength>2</MinLength>
+        <MaxLength>2</MaxLength>
+        <LengthDistribution>
+          <LengthDistributionItem>
+            <Length>2</Length>
+            <Count>23</Count>
+          </LengthDistributionItem>
+        </LengthDistribution>
+      </ColumnLengthDistributionProfile>
+      <ColumnLengthDistributionProfile ProfileRequestID="LengthDistReq" IsExact="true">
+        <DataSourceID>{9BBF10C2-3755-471E-A12C-B55F4FA80B01}</DataSourceID>
+        <Table DataSource="ARASH\ARASH_DEV_BI_MD" Database="pubs" Schema="dbo" Table="authors" RowCount="23" />
+        <Column Name="zip" SqlDbType="Char" MaxLength="5" Precision="255" Scale="255" LCID="1033" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        <IgnoreLeadingSpace>false</IgnoreLeadingSpace>
+        <IgnoreTrailingSpace>true</IgnoreTrailingSpace>
+        <MinLength>5</MinLength>
+        <MaxLength>5</MaxLength>
+        <LengthDistribution>
+          <LengthDistributionItem>
+            <Length>5</Length>
+            <Count>23</Count>
+          </LengthDistributionItem>
+        </LengthDistribution>
+      </ColumnLengthDistributionProfile>
+      <ColumnValueDistributionProfile IsExact="true" ProfileRequestID="ValueDistReq">
+        <DataSourceID>{9BBF10C2-3755-471E-A12C-B55F4FA80B01}</DataSourceID>
+        <Table DataSource="ARASH\ARASH_DEV_BI_MD" Database="pubs" Schema="dbo" Table="authors" RowCount="23" />
+        <Column Name="au_id" SqlDbType="VarChar" MaxLength="11" Precision="255" Scale="255" LCID="1033" CodePage="0" IsNullable="false" StringCompareOptions="0" />
+        <NumberOfDistinctValues>23</NumberOfDistinctValues>
+        <ValueDistribution>
+          <ValueDistributionItem>
+            <Value>409-56-7008</Value>
+            <Count>1</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>648-92-1872</Value>
+            <Count>1</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>238-95-7766</Value>
+            <Count>1</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>722-51-5454</Value>
+            <Count>1</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>712-45-1867</Value>
+            <Count>1</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>427-17-2319</Value>
+            <Count>1</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>213-46-8915</Value>
+            <Count>1</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>527-72-3246</Value>
+            <Count>1</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>472-27-2349</Value>
+            <Count>1</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>846-92-7186</Value>
+            <Count>1</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>756-30-7391</Value>
+            <Count>1</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>486-29-1786</Value>
+            <Count>1</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>724-80-9391</Value>
+            <Count>1</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>893-72-1158</Value>
+            <Count>1</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>267-41-2394</Value>
+            <Count>1</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>807-91-6654</Value>
+            <Count>1</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>998-72-3567</Value>
+            <Count>1</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>899-46-2035</Value>
+            <Count>1</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>341-22-1782</Value>
+            <Count>1</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>274-80-9391</Value>
+            <Count>1</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>724-08-9931</Value>
+            <Count>1</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>172-32-1176</Value>
+            <Count>1</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>672-71-3249</Value>
+            <Count>1</Count>
+          </ValueDistributionItem>
+        </ValueDistribution>
+      </ColumnValueDistributionProfile>
+      <CandidateKeyProfile IsExact="true" ProfileRequestID="KeyReq">
+        <DataSourceID>{9BBF10C2-3755-471E-A12C-B55F4FA80B01}</DataSourceID>
+        <Table DataSource="ARASH\ARASH_DEV_BI_MD" Database="pubs" Schema="dbo" Table="authors" RowCount="23" />
+        <KeyColumns>
+          <Column Name="au_lname" SqlDbType="VarChar" MaxLength="40" Precision="255" Scale="255" LCID="1033" CodePage="0" IsNullable="false" StringCompareOptions="0" />
+        </KeyColumns>
+        <IsExactKey>false</IsExactKey>
+        <KeyStrength>0.9565217</KeyStrength>
+        <KeyViolations>
+          <MultiColumnValueDistributionItem>
+            <ColumnValues>
+              <ColumnValue>Ringer</ColumnValue>
+            </ColumnValues>
+            <Count>2</Count>
+          </MultiColumnValueDistributionItem>
+        </KeyViolations>
+      </CandidateKeyProfile>
+      <ColumnValueDistributionProfile IsExact="true" ProfileRequestID="ValueDistReq">
+        <DataSourceID>{9BBF10C2-3755-471E-A12C-B55F4FA80B01}</DataSourceID>
+        <Table DataSource="ARASH\ARASH_DEV_BI_MD" Database="pubs" Schema="dbo" Table="authors" RowCount="23" />
+        <Column Name="au_lname" SqlDbType="VarChar" MaxLength="40" Precision="255" Scale="255" LCID="1033" CodePage="0" IsNullable="false" StringCompareOptions="0" />
+        <NumberOfDistinctValues>22</NumberOfDistinctValues>
+        <ValueDistribution>
+          <ValueDistributionItem>
+            <Value>Bennet</Value>
+            <Count>1</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Blotchet-Halls</Value>
+            <Count>1</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Carson</Value>
+            <Count>1</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>DeFrance</Value>
+            <Count>1</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>del Castillo</Value>
+            <Count>1</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Dull</Value>
+            <Count>1</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Green</Value>
+            <Count>1</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Greene</Value>
+            <Count>1</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Gringlesby</Value>
+            <Count>1</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Hunter</Value>
+            <Count>1</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Karsen</Value>
+            <Count>1</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Locksley</Value>
+            <Count>1</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>MacFeather</Value>
+            <Count>1</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>McBadden</Value>
+            <Count>1</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>O'Leary</Value>
+            <Count>1</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Panteley</Value>
+            <Count>1</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Ringer</Value>
+            <Count>2</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Smith</Value>
+            <Count>1</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Straight</Value>
+            <Count>1</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Stringer</Value>
+            <Count>1</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>White</Value>
+            <Count>1</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Yokomoto</Value>
+            <Count>1</Count>
+          </ValueDistributionItem>
+        </ValueDistribution>
+      </ColumnValueDistributionProfile>
+      <CandidateKeyProfile IsExact="true" ProfileRequestID="KeyReq">
+        <DataSourceID>{9BBF10C2-3755-471E-A12C-B55F4FA80B01}</DataSourceID>
+        <Table DataSource="ARASH\ARASH_DEV_BI_MD" Database="pubs" Schema="dbo" Table="authors" RowCount="23" />
+        <KeyColumns>
+          <Column Name="au_fname" SqlDbType="VarChar" MaxLength="20" Precision="255" Scale="255" LCID="1033" CodePage="0" IsNullable="false" StringCompareOptions="0" />
+        </KeyColumns>
+        <IsExactKey>true</IsExactKey>
+      </CandidateKeyProfile>
+      <ColumnValueDistributionProfile IsExact="true" ProfileRequestID="ValueDistReq">
+        <DataSourceID>{9BBF10C2-3755-471E-A12C-B55F4FA80B01}</DataSourceID>
+        <Table DataSource="ARASH\ARASH_DEV_BI_MD" Database="pubs" Schema="dbo" Table="authors" RowCount="23" />
+        <Column Name="au_fname" SqlDbType="VarChar" MaxLength="20" Precision="255" Scale="255" LCID="1033" CodePage="0" IsNullable="false" StringCompareOptions="0" />
+        <NumberOfDistinctValues>23</NumberOfDistinctValues>
+        <ValueDistribution>
+          <ValueDistributionItem>
+            <Value>Abraham</Value>
+            <Count>1</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Akiko</Value>
+            <Count>1</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Albert</Value>
+            <Count>1</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Ann</Value>
+            <Count>1</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Anne</Value>
+            <Count>1</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Burt</Value>
+            <Count>1</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Charlene</Value>
+            <Count>1</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Cheryl</Value>
+            <Count>1</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Dean</Value>
+            <Count>1</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Dirk</Value>
+            <Count>1</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Heather</Value>
+            <Count>1</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Innes</Value>
+            <Count>1</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Johnson</Value>
+            <Count>1</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Livia</Value>
+            <Count>1</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Marjorie</Value>
+            <Count>1</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Meander</Value>
+            <Count>1</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Michael</Value>
+            <Count>1</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Michel</Value>
+            <Count>1</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Morningstar</Value>
+            <Count>1</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Reginald</Value>
+            <Count>1</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Sheryl</Value>
+            <Count>1</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Stearns</Value>
+            <Count>1</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Sylvia</Value>
+            <Count>1</Count>
+          </ValueDistributionItem>
+        </ValueDistribution>
+      </ColumnValueDistributionProfile>
+      <ColumnValueDistributionProfile IsExact="true" ProfileRequestID="ValueDistReq">
+        <DataSourceID>{9BBF10C2-3755-471E-A12C-B55F4FA80B01}</DataSourceID>
+        <Table DataSource="ARASH\ARASH_DEV_BI_MD" Database="pubs" Schema="dbo" Table="authors" RowCount="23" />
+        <Column Name="phone" SqlDbType="Char" MaxLength="12" Precision="255" Scale="255" LCID="1033" CodePage="0" IsNullable="false" StringCompareOptions="0" />
+        <NumberOfDistinctValues>21</NumberOfDistinctValues>
+        <ValueDistribution>
+          <ValueDistributionItem>
+            <Value>219 547-9982</Value>
+            <Count>1</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>301 946-8853</Value>
+            <Count>1</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>408 286-2428</Value>
+            <Count>1</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>408 496-7223</Value>
+            <Count>1</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>415 354-7128</Value>
+            <Count>1</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>415 534-9219</Value>
+            <Count>1</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>415 548-7723</Value>
+            <Count>1</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>415 585-4620</Value>
+            <Count>1</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>415 658-9932</Value>
+            <Count>1</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>415 834-2919</Value>
+            <Count>1</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>415 836-7128</Value>
+            <Count>2</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>415 843-2991</Value>
+            <Count>1</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>415 935-4228</Value>
+            <Count>1</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>415 986-7020</Value>
+            <Count>1</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>503 745-6402</Value>
+            <Count>1</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>615 297-2723</Value>
+            <Count>1</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>615 996-8275</Value>
+            <Count>1</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>707 448-4982</Value>
+            <Count>1</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>707 938-6445</Value>
+            <Count>1</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>801 826-0752</Value>
+            <Count>2</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>913 843-0462</Value>
+            <Count>1</Count>
+          </ValueDistributionItem>
+        </ValueDistribution>
+      </ColumnValueDistributionProfile>
+      <ColumnValueDistributionProfile IsExact="true" ProfileRequestID="ValueDistReq">
+        <DataSourceID>{9BBF10C2-3755-471E-A12C-B55F4FA80B01}</DataSourceID>
+        <Table DataSource="ARASH\ARASH_DEV_BI_MD" Database="pubs" Schema="dbo" Table="authors" RowCount="23" />
+        <Column Name="address" SqlDbType="VarChar" MaxLength="40" Precision="255" Scale="255" LCID="1033" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        <NumberOfDistinctValues>21</NumberOfDistinctValues>
+        <ValueDistribution>
+          <ValueDistributionItem>
+            <Value>10 Mississippi Dr.</Value>
+            <Count>1</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>10932 Bigge Rd.</Value>
+            <Count>1</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>18 Broadway Av.</Value>
+            <Count>1</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>1956 Arlington Pl.</Value>
+            <Count>1</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>22 Cleveland Av. #14</Value>
+            <Count>1</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>22 Graybar House Rd.</Value>
+            <Count>1</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>2286 Cram Pl. #86</Value>
+            <Count>1</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>3 Balding Pl.</Value>
+            <Count>1</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>3 Silver Ct.</Value>
+            <Count>1</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>301 Putnam</Value>
+            <Count>1</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>309 63rd St. #411</Value>
+            <Count>1</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>3410 Blonde St.</Value>
+            <Count>2</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>44 Upland Hts.</Value>
+            <Count>1</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>5420 College Av.</Value>
+            <Count>1</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>5420 Telegraph Av.</Value>
+            <Count>1</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>55 Hillsdale Bl.</Value>
+            <Count>1</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>5720 McAuley St.</Value>
+            <Count>1</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>589 Darwin Ln.</Value>
+            <Count>1</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>6223 Bateman St.</Value>
+            <Count>1</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>67 Seventh Av.</Value>
+            <Count>2</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>PO Box 792</Value>
+            <Count>1</Count>
+          </ValueDistributionItem>
+        </ValueDistribution>
+      </ColumnValueDistributionProfile>
+      <ColumnValueDistributionProfile IsExact="true" ProfileRequestID="ValueDistReq">
+        <DataSourceID>{9BBF10C2-3755-471E-A12C-B55F4FA80B01}</DataSourceID>
+        <Table DataSource="ARASH\ARASH_DEV_BI_MD" Database="pubs" Schema="dbo" Table="authors" RowCount="23" />
+        <Column Name="city" SqlDbType="VarChar" MaxLength="20" Precision="255" Scale="255" LCID="1033" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        <NumberOfDistinctValues>16</NumberOfDistinctValues>
+        <ValueDistribution>
+          <ValueDistributionItem>
+            <Value>Ann Arbor</Value>
+            <Count>1</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Berkeley</Value>
+            <Count>2</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Corvallis</Value>
+            <Count>1</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Covelo</Value>
+            <Count>1</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Gary</Value>
+            <Count>1</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Lawrence</Value>
+            <Count>1</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Menlo Park</Value>
+            <Count>1</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Nashville</Value>
+            <Count>1</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Oakland</Value>
+            <Count>5</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Palo Alto</Value>
+            <Count>2</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Rockville</Value>
+            <Count>1</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Salt Lake City</Value>
+            <Count>2</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>San Francisco</Value>
+            <Count>1</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>San Jose</Value>
+            <Count>1</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Vacaville</Value>
+            <Count>1</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Walnut Creek</Value>
+            <Count>1</Count>
+          </ValueDistributionItem>
+        </ValueDistribution>
+      </ColumnValueDistributionProfile>
+      <ColumnValueDistributionProfile IsExact="true" ProfileRequestID="ValueDistReq">
+        <DataSourceID>{9BBF10C2-3755-471E-A12C-B55F4FA80B01}</DataSourceID>
+        <Table DataSource="ARASH\ARASH_DEV_BI_MD" Database="pubs" Schema="dbo" Table="authors" RowCount="23" />
+        <Column Name="state" SqlDbType="Char" MaxLength="2" Precision="255" Scale="255" LCID="1033" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        <NumberOfDistinctValues>8</NumberOfDistinctValues>
+        <ValueDistribution>
+          <ValueDistributionItem>
+            <Value>CA</Value>
+            <Count>15</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>IN</Value>
+            <Count>1</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>KS</Value>
+            <Count>1</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>MD</Value>
+            <Count>1</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>MI</Value>
+            <Count>1</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>OR</Value>
+            <Count>1</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>TN</Value>
+            <Count>1</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>UT</Value>
+            <Count>2</Count>
+          </ValueDistributionItem>
+        </ValueDistribution>
+      </ColumnValueDistributionProfile>
+      <ColumnValueDistributionProfile IsExact="true" ProfileRequestID="ValueDistReq">
+        <DataSourceID>{9BBF10C2-3755-471E-A12C-B55F4FA80B01}</DataSourceID>
+        <Table DataSource="ARASH\ARASH_DEV_BI_MD" Database="pubs" Schema="dbo" Table="authors" RowCount="23" />
+        <Column Name="zip" SqlDbType="Char" MaxLength="5" Precision="255" Scale="255" LCID="1033" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        <NumberOfDistinctValues>18</NumberOfDistinctValues>
+        <ValueDistribution>
+          <ValueDistributionItem>
+            <Value>20853</Value>
+            <Count>1</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>37215</Value>
+            <Count>1</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>46403</Value>
+            <Count>1</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>48105</Value>
+            <Count>1</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>66044</Value>
+            <Count>1</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>84152</Value>
+            <Count>2</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>94025</Value>
+            <Count>1</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>94130</Value>
+            <Count>1</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>94301</Value>
+            <Count>2</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>94595</Value>
+            <Count>1</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>94609</Value>
+            <Count>3</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>94612</Value>
+            <Count>1</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>94618</Value>
+            <Count>1</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>94705</Value>
+            <Count>2</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>95128</Value>
+            <Count>1</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>95428</Value>
+            <Count>1</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>95688</Value>
+            <Count>1</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>97330</Value>
+            <Count>1</Count>
+          </ValueDistributionItem>
+        </ValueDistribution>
+      </ColumnValueDistributionProfile>
+      <ColumnValueDistributionProfile IsExact="true" ProfileRequestID="ValueDistReq">
+        <DataSourceID>{9BBF10C2-3755-471E-A12C-B55F4FA80B01}</DataSourceID>
+        <Table DataSource="ARASH\ARASH_DEV_BI_MD" Database="pubs" Schema="dbo" Table="authors" RowCount="23" />
+        <Column Name="contract" SqlDbType="Bit" MaxLength="0" Precision="255" Scale="255" LCID="-1" CodePage="0" IsNullable="false" StringCompareOptions="0" />
+        <NumberOfDistinctValues>2</NumberOfDistinctValues>
+        <ValueDistribution>
+          <ValueDistributionItem>
+            <Value>False</Value>
+            <Count>4</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>True</Value>
+            <Count>19</Count>
+          </ValueDistributionItem>
+        </ValueDistribution>
+      </ColumnValueDistributionProfile>
+    </Profiles>
+  </DataProfileOutput>
+</DataProfile>
